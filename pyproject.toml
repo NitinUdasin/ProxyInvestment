@@ -1,0 +1,26 @@
+[project]
+name = "proxyinvestment"
+version = "0.1.0"
+description = "LangGraph agent for Proxy Investment framework — find Indian NSE enablers in mega trends using Lynch filters"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "langchain-anthropic>=1.4.0",
+    "langchain-community>=0.4.1",
+    "langchain-tavily>=0.2.17",
+    "langgraph>=1.1.6",
+    "pandoc>=2.4",
+    "python-dotenv>=1.2.2",
+    "requests>=2.33.1",
+    "rich>=14.3.3",
+    "tavily-python>=0.7.23",
+    "yfinance>=1.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[project.scripts]
+proxy-agent = "main:main"
